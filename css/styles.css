@@ -42,6 +42,10 @@ h1{
     font-weight: lighter;
 }
 
+h2{
+    font-weight: lighter;
+}
+
 .logo{
     width: 10rem;
     margin-left: 2rem;
@@ -306,4 +310,160 @@ footer{
 .crear-cuenta .formulario
 {
     height: 80rem;
+}
+
+/*-------------------Favoritos--------------------*/
+
+.favoritos{
+    margin-top: 10rem;
+}
+.favoritos h2{
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: lighter;
+}
+
+
+.fila .columna{
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 200rem;
+    height: 16rem;
+    background-color: #d9d9d9;
+    padding: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.favoritos .fila .columna img{
+    width: 10rem;
+    height: 10rem;
+    margin-right: 2rem;
+}
+
+.fila .producto{
+    display: flex;
+    flex-direction: row;
+}
+
+/*--------------------Carrito--------------------*/
+
+.carrito{
+    margin-top: 10rem;
+}
+
+.carrito h2{
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.fila-carrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fila-carrito p{
+    text-align: center;
+}
+
+.fila-carrito .columna-venta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background-color: #d9d9d9;
+    padding: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+}
+
+.fila-carrito .columna-producto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    padding: 2rem;
+}
+
+.fila-carrito .columna-producto div, .fila-carrito .columna-venta div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    padding: 2rem;
+}
+.fila-carrito .columna-producto img{
+    width: 10rem;
+    height: 10rem;
+    margin-right: 2rem;
+}
+.fila-carrito .producto-venta p{
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.fila-carrito hr{
+    margin: 4rem auto;
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 100%;
+}
+
+.total-carrito .columna-venta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background-color: #d9d9d9;
+    padding: 2rem;
+}
+
+.total-carrito .columna-producto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    padding: 2rem;
+}
+
+.pos-boton-carrito{
+    display: flex;
+    justify-content: right;
+}
+
+.boton-carrito{
+    background-color: #108ac4;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 4rem;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 3rem;
+    border: none;
+}
+.boton-carrito:hover{
+    background-color: #0f7ab4;
 }
