@@ -155,6 +155,67 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
+
+/* Ocultar el div de contactos por defecto */
+.contactos {
+    display: none;
+    width: 30rem;
+    height: 20rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.telefono {
+    text-decoration: none;
+}
+
+/* Mostrar el div de contactos cuando se usa el enlace */
+#contactos:target {
+    display: block;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.contactos h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.contactos p {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.cerrar {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+.cerrar:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+}
+
 /*-----------------------------Hero----------------------------*/
 
 .hero{
@@ -520,7 +581,6 @@ footer{
         align-items: center;
         text-align: center;
     }
-
     .footer .columnas {
         display: block;
     }
