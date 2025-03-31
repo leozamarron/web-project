@@ -479,6 +479,7 @@ footer{
 @media (max-width: 1024px) {
     .logo {
         width: auto;
+        margin: 0;
     }
     h1{
         font-size: 3.5rem;
